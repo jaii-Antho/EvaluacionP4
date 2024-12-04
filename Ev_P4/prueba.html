@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostrar más texto</title>
+  <style>
+    #extra-text {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <p id="text">Jair es un buen niño.</p>
+  <p id="extra-text">Jair es un buen niño, por eso es que todos lo quieren.</p>
+  <button onclick="mostrarMas()">Mostrar más</button>
+
+  <script>
+    function mostrarMas() {
+      var extraText = document.getElementById("extra-text");
+      if (extraText.style.display === "none") {
+        extraText.style.display = "block";  // Muestra el texto extra
+      } else {
+        extraText.style.display = "none";   // Oculta el texto extra
+      }
+    }
+  </script>
+</body>
+</html>
